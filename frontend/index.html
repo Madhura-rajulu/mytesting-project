@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend</title>
+</head>
+<body>
+    <h1>Frontend Page</h1>
+    <p id="message">Loading...</p>
+
+    <script>
+        fetch('http://localhost:5000/api/message')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('message').innerText = data.message;
+            })
+            .catch(error => {
+                document.getElementById('message').innerText = 'Error: ' + error;
+            });
+    </script>
+</body>
+</html>
