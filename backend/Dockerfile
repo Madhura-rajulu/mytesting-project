@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY backend/ .  # ⬅️ Only copy the contents of backend folder
+COPY backend/ . 
 
 RUN ls -l
 
