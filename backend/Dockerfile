@@ -1,8 +1,8 @@
 FROM python:3.10-slim
 
-WORKDIR /app
-
 RUN cd /backend
+
+WORKDIR /app
 
 COPY . .
 
