@@ -1,9 +1,13 @@
 FROM python:3.10-slim
 
 WORKDIR /app
-RUN cd backend/
+
+RUN cd /backend
+
 COPY . .
+
 RUN ls -l
+
 RUN pip install flask flask-cors
 
 EXPOSE 5000
