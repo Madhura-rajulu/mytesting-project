@@ -1,10 +1,8 @@
 FROM python:3.10-slim
 
-RUN cd /backend
-
 WORKDIR /app
 
-COPY . .
+COPY backend/ .  # ⬅️ Only copy the contents of backend folder
 
 RUN ls -l
 
