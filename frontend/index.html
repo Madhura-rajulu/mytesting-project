@@ -8,7 +8,7 @@
     <p id="message">Loading...</p>
 
     <script>
-        fetch('lb-final-000-57562314.eu-north-1.elb.amazonaws.com/api/message')
+        fetch('http://lb-final-000-57562314.eu-north-1.elb.amazonaws.com/api/message')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('message').innerText = data.message;
